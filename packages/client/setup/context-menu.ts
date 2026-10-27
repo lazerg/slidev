@@ -79,6 +79,7 @@ export default () => {
         icon: 'i-carbon:pen',
         label: drawingEnabled.value ? 'Hide drawing toolbar' : 'Show drawing toolbar',
         action: () => (drawingEnabled.value = !drawingEnabled.value),
+        show: __SLIDEV_FEATURE_DRAWINGS__,
       },
       {
         icon: 'i-carbon:apps',
